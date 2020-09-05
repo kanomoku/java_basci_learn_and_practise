@@ -13,8 +13,8 @@ public class C_callable_SellTickets_MainTest {
         new Thread(futureTask2, "有返回值的线程2").start();
 
         try {
-            System.out.println(Thread.currentThread().getName() + "  线程 " + futureTask1.get());
-            System.out.println(Thread.currentThread().getName() + "  线程 " + futureTask2.get());
+            System.out.println(Thread.currentThread().getName() + " 线程  返回值： " + futureTask1.get());
+            System.out.println(Thread.currentThread().getName() + " 线程  返回值： " + futureTask2.get());
         } catch (Exception e) {
             e.printStackTrace();
         }
