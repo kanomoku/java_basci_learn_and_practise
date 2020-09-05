@@ -15,7 +15,7 @@ public class XiChengChi_Handle implements Runnable {
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName() + name + " Start Time = " + new Date());
-        processCommand();
+//        processCommand();
         System.out.println(Thread.currentThread().getName() + name + " End Time = " + new Date());
     }
 
