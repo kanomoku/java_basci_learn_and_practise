@@ -1,12 +1,12 @@
 package xiancheng;
 
-public class B_implements_RunningMan implements Runnable {
+public class B_Runnable_RunningMan implements Runnable {
     private String name;
 
-    public B_implements_RunningMan() {
+    public B_Runnable_RunningMan() {
     }
 
-    public B_implements_RunningMan(String name) {
+    public B_Runnable_RunningMan(String name) {
         this.name = name;
     }
 
