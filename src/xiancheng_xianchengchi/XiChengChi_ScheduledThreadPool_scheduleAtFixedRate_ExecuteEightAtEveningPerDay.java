@@ -12,17 +12,17 @@ import java.util.concurrent.TimeUnit;
 /**
  * 每天晚上9点执行一次 每天定时安排任务进行执行
  */
-public class XiChengChi_ScheduledThreadPool_ExecuteEightAtEveningPerDay {
+public class XiChengChi_ScheduledThreadPool_scheduleAtFixedRate_ExecuteEightAtEveningPerDay {
     public static void main(String args[]) throws InterruptedException, ExecutionException {
+        System.out.println(Thread.currentThread().getName() + "线程: Starting at: " + new Date() + "时间 at: " + System.currentTimeMillis());
         ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
         // long oneDay = 24 * 60 * 60 * 1000=86400000;
         long oneDay = 5000;
 //        long initDelay = getTimeMillis("21:00:00") - System.currentTimeMillis();
-        long initDelay = getTimeMillis("21:00:00") - getTimeMillis("20:59:50");
-//        long initDelay = getTimeMillis("21:00:00") - getTimeMillis("21:00:03");
+//        long initDelay = getTimeMillis("21:00:00") - getTimeMillis("20:59:57");//3000ms
+        long initDelay = getTimeMillis("21:00:00") - getTimeMillis("21:00:03");//-3000ms
         initDelay = initDelay > 0 ? initDelay : oneDay + initDelay;
-        System.out.println(Thread.currentThread().getName() + "线程: Starting at: " + new Date() + "时间 at: " + System.currentTimeMillis());
-        executor.scheduleAtFixedRate(new XiChengChi_Handle("线程名字"), initDelay, oneDay, TimeUnit.MILLISECONDS);
+        executor.scheduleAtFixedRate(new XiChengChi_Handle("线程名字：定时任务"), initDelay, oneDay, TimeUnit.MILLISECONDS);
         while (!executor.isTerminated()) {
             // wait for all tasks to finish
         }

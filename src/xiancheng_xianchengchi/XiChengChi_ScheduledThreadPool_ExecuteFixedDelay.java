@@ -12,10 +12,10 @@ import java.util.concurrent.TimeUnit;
 public class XiChengChi_ScheduledThreadPool_ExecuteFixedDelay {
     public static void main(String args[]) throws InterruptedException, ExecutionException {
         System.out.println(Thread.currentThread().getName() + "线程: Starting at: " + new Date());
-        ScheduledExecutorService executor = Executors.newScheduledThreadPool(10);
-        for (int i = 0; i < 10; i++) {
+        ScheduledExecutorService executor = Executors.newScheduledThreadPool(2);
+        for (int i = 1; i < 4; i++) {
             System.out.println("添加了第" + i + "个线程 "+ new Date());
-            executor.scheduleWithFixedDelay(new XiChengChi_Handle("线程名字" + i), 0, 10, TimeUnit.SECONDS);
+            executor.scheduleWithFixedDelay(new XiChengChi_Handle("线程名字" + i), 2, 10, TimeUnit.SECONDS);
         }
         System.out.println(Thread.currentThread().getName() + "线程: 打卡" + new Date());
         while (!executor.isTerminated()) {
