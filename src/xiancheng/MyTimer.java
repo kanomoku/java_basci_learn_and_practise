@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.TimerTask;
 
-public class Timer {
+public class MyTimer {
     private int count = 1;
     //属性 集合
     private ArrayList<String> userBox = new ArrayList<>();
@@ -39,7 +39,7 @@ public class Timer {
 
     public static void main(String[] args) {
         try {
-            Timer tt = new Timer();
+            MyTimer tt = new MyTimer();
             tt.test();
         } catch (ParseException e) {
             e.printStackTrace();
