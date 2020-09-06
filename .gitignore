@@ -29,7 +29,6 @@ gradle-app.setting
 
 #Idea Begginning
 .idea/
-*.iml
 out/
 gen/
 idea-gitignore.jar
