@@ -30,7 +30,7 @@ public class MyTimer {
             public void run() {
                 System.out.println("第" + count++ + "次执行");
                 for (int i = 0; i < userBox.size(); i++) {
-                    System.out.println("给" + userBox.get(i) + "发送一条消息:" + "恭喜发财");
+                    System.out.println(Thread.currentThread().getName() + "  给" + userBox.get(i) + "发送一条消息:" + "恭喜发财");
                 }
                 System.out.println("做点坏事真开心");
             }
