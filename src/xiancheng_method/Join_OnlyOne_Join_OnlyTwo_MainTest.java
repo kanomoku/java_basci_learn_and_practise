@@ -1,6 +1,6 @@
 package xiancheng_method;
 
-public class Join_OnlyOne_JoinTwo_MatiTest {
+public class Join_OnlyOne_Join_OnlyTwo_MainTest {
     public static void main(String[] args){
         Join_OnlyOne one = new Join_OnlyOne();
         Join_OnlyTwo two = new Join_OnlyTwo();
