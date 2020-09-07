@@ -1,4 +1,4 @@
-package xiancheng_join;
+package xiancheng_method;
 
 public class Join_OnlyTwo_In_One extends Thread {
     public void run() {

@@ -1,4 +1,4 @@
-package xiancheng_join;
+package xiancheng_method;
 
 public class Join_OnlyTwo_Join_One_MainTest {
     public static void main(String[] args) {

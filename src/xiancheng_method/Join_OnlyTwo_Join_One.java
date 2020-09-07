@@ -1,4 +1,4 @@
-package xiancheng_join;
+package xiancheng_method;
 
 //两个线程合并成一个线程
 public class Join_OnlyTwo_Join_One extends Thread {

@@ -1,4 +1,4 @@
-package xiancheng_join;
+package xiancheng_method;
 
 /**
  * one启动

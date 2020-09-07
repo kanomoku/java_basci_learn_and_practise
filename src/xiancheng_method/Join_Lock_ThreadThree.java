@@ -1,4 +1,4 @@
-package xiancheng_join;
+package xiancheng_method;
 
 import java.util.Date;
 
