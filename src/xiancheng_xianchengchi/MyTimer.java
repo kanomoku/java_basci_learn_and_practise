@@ -1,4 +1,4 @@
-package xiancheng;
+package xiancheng_xianchengchi;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -28,11 +28,11 @@ public class MyTimer {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                System.out.println("第" + count++ + "次执行");
+                System.out.println("第" + count++ + "次执行" + new Date());
                 for (int i = 0; i < userBox.size(); i++) {
-                    System.out.println(Thread.currentThread().getName() + "  给" + userBox.get(i) + "发送一条消息:" + "恭喜发财");
+                    System.out.println(Thread.currentThread().getName() + "  给" + userBox.get(i) + "发送一条消息:" + "恭喜发财"+ new Date());
                 }
-                System.out.println("做点坏事真开心");
+                System.out.println("做点坏事真开心" + new Date());
             }
         }, firstTime, 3000);
     }

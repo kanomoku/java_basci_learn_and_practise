@@ -103,13 +103,13 @@ public class Synchronized_Class_MainTest {
          */
 
 
-        Synchronized_Class_ObjectService service = new Synchronized_Class_ObjectService();
-        Synchronized_Class_ThreadA a = new Synchronized_Class_ThreadA();
-        a.setName("A");
-        a.start();
-        Synchronized_Class_ThreadB b = new Synchronized_Class_ThreadB(service);
-        b.setName("B");
-        b.start();
+//        Synchronized_Class_ObjectService service = new Synchronized_Class_ObjectService();
+//        Synchronized_Class_ThreadA a = new Synchronized_Class_ThreadA();
+//        a.setName("A");
+//        a.start();
+//        Synchronized_Class_ThreadB b = new Synchronized_Class_ThreadB(service);
+//        b.setName("B");
+//        b.start();
         /**
          * 多线程访问  类 对象   synchronized static                      synchronized(Class.class)                                  同步
          * 多线程访问  类 对象   synchronized static                      synchronized static                                        同步
