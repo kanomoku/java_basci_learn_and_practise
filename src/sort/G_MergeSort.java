@@ -30,7 +30,6 @@ public class G_MergeSort {
         int p1 = start;
         int p2 = mid + 1;
         int p = 0;
-
         while (p1 <= mid && p2 <= end) {
             if (arr[p1] < arr[p2]) {
                 tempArray[p++] = arr[p1++];
@@ -48,4 +47,5 @@ public class G_MergeSort {
             arr[start + i] = tempArray[i];
         }
     }
+
 }
