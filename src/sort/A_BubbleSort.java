@@ -6,7 +6,7 @@ public class A_BubbleSort {
     public static void main(String[] args) {
 
         int[] array = new int[]{5, 2, 8, 6, 3, 9, 2, 1, 7};
-        sort(array);
+//        sort1(array);
         System.out.println("最终结果：");
         System.out.println(Arrays.toString(array));
     }
@@ -64,25 +64,5 @@ public class A_BubbleSort {
 //        }
 //    }
 
-    public static void sort(int[] arr) {
-        int end = arr.length - 1;
-        int temp = arr.length - 1;
-        for (int i = 0; i < arr.length - 1; i++) {
-            boolean isSort = true;
-            for (int j = 0; j < end; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int a = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = a;
-                    isSort = false;
-                    temp = j;
-                }
-            }
-            if (isSort) {
-                break;
-            }
-            end = temp;
-        }
-    }
 
 }
