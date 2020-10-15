@@ -9,7 +9,7 @@ public class G_MergeSort {
     public static void main(String[] args) {
 
         int[] array = new int[]{5, 8, 2, 6, 3, 9, 2, 1, 7};
-//        sort1(array, 0, array.length - 1);
+//        sort(array, 0, array.length - 1);
         System.out.println("最终结果：");
         System.out.println(Arrays.toString(array));
     }
