@@ -12,7 +12,7 @@ public class F_Heap {
         System.out.println("上浮最终结果：");
         System.out.println(Arrays.toString(array));
         int[] array1 = new int[]{5, 8, 6, 3, 9, 2, 1, 2};
-//        sort(array1);
+//        build(array1);
         System.out.println("下沉构建堆：");
         System.out.println(Arrays.toString(array1));
     }
