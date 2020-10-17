@@ -15,6 +15,7 @@ public class F_Heap {
 //        build(array1);
         System.out.println("下沉构建堆：");
         System.out.println(Arrays.toString(array1));
+
     }
 
 
@@ -51,5 +52,6 @@ public class F_Heap {
 //            }
 //            arr[parentIndex] = tempValue;
 //    }
+
 
 }

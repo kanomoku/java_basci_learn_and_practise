@@ -9,6 +9,8 @@ public class E_QuickSort {
     public static void main(String[] args) {
 
         int[] array = new int[]{5, 8, 2, 6, 3, 9, 2, 6, 1, 7};
+        System.out.println("原始数据：");
+        System.out.println(Arrays.toString(array));
 //        sort(array, 0, array.length - 1);
         System.out.println("最终结果：");
         System.out.println(Arrays.toString(array));
@@ -106,5 +108,4 @@ public class E_QuickSort {
 //        System.out.println(Arrays.toString(arr));
 //        return left;
 //    }
-
 }
