@@ -21,7 +21,6 @@ public class F_HeapSort {
 //            System.out.println(Arrays.toString(array));
 //        }
 
-
     }
 
 
@@ -46,5 +45,6 @@ public class F_HeapSort {
 //        }
 //        arr[parentIndex] = tempValue;
 //    }
+
 
 }
