@@ -4,10 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 合并排序/归并排序
- */
-public class Num1_twoSum {
+public class Num1_TwoSum {
     public static void main(String[] args) {
 
         int[] arr = new int[]{2, 7, 11, 15};
