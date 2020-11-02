@@ -13,7 +13,7 @@ public class BinarySearch_leetcode704 {
     public static int MySearch(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;
-        while (left <= right) {
+        while (left <= right) { //这个等于号不能省，不然一个元素的情况会报错
             int mid = (left + right) / 2;
             if (nums[mid] == target) {
                 return mid;
@@ -46,5 +46,6 @@ public class BinarySearch_leetcode704 {
         // End Condition: left > right
         return -1;
     }
+
 
 }
