@@ -53,13 +53,13 @@ public class Num845_longestMountain {
         }
         int[] left = new int[n];
         System.out.println(left[0]);
-        for (int i = 1; i < n; ++i) {
+        for (int i = 1; i < n; ++i) {//left[0]默认值就是0，这里有点数组前n项动态求和的意思
             left[i] = A[i - 1] < A[i] ? left[i - 1] + 1 : 0;
         }
         int[] right = new int[n];
         System.out.println(right[n - 1]);
         for (int i = n - 2; i >= 0; --i) {
-            right[i] = A[i + 1] < A[i] ? right[i + 1] + 1 : 0;
+            right[i] = A[i] > A[i + 1] ? right[i + 1] + 1 : 0;
         }
 
         int ans = 0;
@@ -73,6 +73,7 @@ public class Num845_longestMountain {
 
     /**
      * 目前没看懂
+     *
      * @param A
      * @return
      */
