@@ -13,7 +13,7 @@ public class A_BubbleSort {
 
 //    public static void sort(int[] arr){
 //        for (int i=0;i< arr.length-1;i++){ //N个元素比较N-1轮
-//            for(int j=0;j<arr.length-i-1;j++){
+//            for(int j=0;j<arr.length-i-1;j++){ //arr.length-i 是一个公式  arr.length-1是因为下面有j+1
 //                if(arr[j]>arr[j+1]){
 //                    int a = arr[j];
 //                    arr[j]= arr[j+1];
